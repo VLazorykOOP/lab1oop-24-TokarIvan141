@@ -111,8 +111,21 @@ void task3()
     int n, m;
     cout << "Size of A (<=400): ";
     cin >> n;
+
+    if (n <= 0 || n > 400)
+    {
+        cout << "Invalid size for A!\n";
+        return;
+    }
+
     cout << "Size of B (<=200): ";
     cin >> m;
+
+    if (m <= 0 || m > 200)
+    {
+        cout << "Invalid size for B!\n";
+        return;
+    }
 
     int* A = new int[n];
     int* B = new int[m];
